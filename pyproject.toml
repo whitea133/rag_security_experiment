@@ -1,0 +1,25 @@
+[project]
+name = "rag-security-experiment"
+version = "0.1.0"
+description = "A lightweight RAG indirect prompt injection experiment for coursework"
+readme = "README.md"
+authors = [
+    { name = "Whitea", email = "1309848726@qq.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "openai>=1.0",
+    "pandas>=2.0",
+    "python-dotenv>=1.0",
+    "scikit-learn>=1.4",
+    "sentence-transformers>=2.7",
+    "tqdm>=4.66",
+]
+
+[project.scripts]
+rag-exp = "rag_security_experiment.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9.9,<0.10.0"]
+build-backend = "uv_build"

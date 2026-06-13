@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local secrets
+.env
+
+# Experiment outputs
+results/runs/*.csv
+results/summary/*.csv
+outputs/tables/*.csv
+outputs/figures/*.png
+outputs/figures/*.jpg
+
+# Model/cache artifacts
+.cache/
